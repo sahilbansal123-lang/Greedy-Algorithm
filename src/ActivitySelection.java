@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class ActivitySelection {
 
+//    TIME COMPLEXITY = 0(N)
+
     public static int activitySelection(int[] start, int[] end) {
         int maxAct = 1;
         ArrayList<Integer> res = new ArrayList<>();
