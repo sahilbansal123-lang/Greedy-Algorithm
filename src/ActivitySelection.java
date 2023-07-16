@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class ActivitySelection {
 
-//    TIME COMPLEXITY = 0(N)
+    // TIME COMPLEXITY = 0(N)
+    // This is for Activities that are ending in sorted order given in the ques
 
     public static int activitySelection(int[] start, int[] end) {
         int maxAct = 1;
@@ -24,6 +25,13 @@ public class ActivitySelection {
         return maxAct;
     }
 
+    // If Activities are not ending in Sorted order. we have to sort them first
+    // For sorting we use 2D matrix.
+
+    public static void sorting(int start[], int end[]){
+        int activities[][] = new int[start.length][end.length];
+
+    }
 
     public static void main(String[] args) {
         int[] start = {1, 3, 0, 5, 8, 5};
