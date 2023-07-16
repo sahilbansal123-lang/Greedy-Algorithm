@@ -29,7 +29,7 @@ public class ActivitySelection {
     // For sorting we use 2D matrix.
 
     public static void sorting(int start[], int end[]){
-        int activities[][] = new int[start.length][end.length];
+        int activities[][] = new int[start.length][3];
 
     }
 
