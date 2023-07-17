@@ -24,8 +24,7 @@ public class JobsSelectionProblem {
         
         ArrayList<Integer> seq = new ArrayList<>();
         int time = 0;
-        for (int i = 0; i < jobs.size(); i++) {
-            Job curr = jobs.get(i);
+        for (Job curr : jobs) {
             if (curr.deadline > time) {
                 seq.add(curr.id);
                 time++;
@@ -33,8 +32,8 @@ public class JobsSelectionProblem {
         }
 
         System.out.println("max jobs = " + seq.size());
-        for (int i = 0; i < seq.size(); i++) {
-            System.out.print(seq.get(i) + " ");
+        for (Integer integer : seq) {
+            System.out.print(integer + " ");
         }
     }
 
